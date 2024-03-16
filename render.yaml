@@ -1,0 +1,22 @@
+databases:
+  - name: financialsite_DB
+    databaseName: financialsite_db
+    user: financialsite
+    region: singapore
+
+services:
+  - type: web
+    name: financialsite
+    env: ruby
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: financialsite_DB
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
+
