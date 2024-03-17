@@ -17,18 +17,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&display=swap" rel="stylesheet">
     
-      <h1>大学生のための Financial Site</h1>
+      <h1>◆大学生のための Financial Café</h1>
       <div class="header-list">
       <ul>
-      <li><%= link_to "トップページ", root_path %> </li>
-      <li><%= link_to "診断機能", new_perfume_path, class: "link" %> </li>
+      <li><%= link_to "TOP", root_path %> </li>
+      <li><%= link_to "診断", new_perfume_path, class: "link" %> </li>
       <li><%= link_to "質問投稿", posts_path, class: "link" %> </li>
       </ul>
       </div>
     </header>
+
     <main>
       <%= yield %>
     </main>
+
+
     <footer>
     <p>Copyright © Ayaka.Usuda All Rights Reserved.</p>
  　 </footer>

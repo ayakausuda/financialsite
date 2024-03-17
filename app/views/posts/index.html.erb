@@ -1,6 +1,6 @@
-<h1>お悩み相談</h1>
-<h3>お悩み一覧</h3>
-<%= link_to "新規投稿へ", new_post_path %>
+<div class="posts">
+<h1>みんなの投稿一覧</h1>
+</div>
 <div class="posts-container">
   <% @posts.each do |t| %>
     <div class="post">
@@ -23,6 +23,10 @@
   <% end %>
 </div>
 
+<div class="post_create">
+<%= link_to "新規投稿へ", new_post_path %>
+</div>
+
 <div class="postsindex01">
  <% if user_signed_in? %>
  <li><%= button_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
@@ -31,4 +35,3 @@
  <li><%= link_to "ログイン", new_user_session_path %></li>
  <% end %>
 </div>
-<%= link_to "トップページに戻る", root_path %>

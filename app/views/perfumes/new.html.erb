@@ -1,42 +1,66 @@
 <%= form_for(@perfume, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="start">
+    <h1>確定申告すべきか簡単診断！</h1>
+    </div>
     <div class="perfume-container">
-        <div class="col-12">
-            <p>Q1. 今年の1月から12月までのバイト・勤務先は</p>
-        </div>
-        <div class="col-6">
+        <div class="Q1">
+            <p>Q1. 今年の1月から12月までのバイト・勤務先は…</p><br>
+        
+            <li>
             <%= f.radio_button :question1, "1", id: "custom_id1" %>
             <label for="custom_id1">1つだけだ</label>
+            </li>
+            <li>
             <%= f.radio_button :question1, "2", id: "custom_id2" %>
             <label for="custom_id2">1つだけだが、途中でバイト・勤務先を変えた</label>
+            </li>
+            <li>
             <%= f.radio_button :question1, "3", id: "custom_id3" %>
             <label for="custom_id3">2つ以上ある、または自分で副業をしている</label>
+            </li>
         </div>
 
-        <div class="col-12">
-            <p>Q2. 今年はいずれかのバイト・勤務先で年末調整を</p>
-        </div> 
-        <div class="col-6">
+        <div class="Q2">
+            <p>Q2. 今年はいずれかのバイト・勤務先で年末調整を…</p><br>
+      
+            <li>
             <%= f.radio_button :question2, "1", id: "custom_id4" %>
             <label for="custom_id4">受けた</label>
+            </li>
+            <li>
             <%= f.radio_button :question2, "2", id: "custom_id5" %>
             <label for="custom_id5">受けていない</label>
-        </div>   
-
-        <div class="col-12">
-            <p>Q3. 今年の1月から12月までの収入について</p>
+            </li>
         </div>
-        <div class="col-6">
+
+        <div class="Q3">
+            <p>Q3. 今年の1月から12月までの収入について</p><br>
+       
+            <li>
             <%= f.radio_button :question3, "1", id: "custom_id6" %>
             <label for="custom_id6">給与の合計額が2,000万円を超える</label>
+            </li>
+            <li>
             <%= f.radio_button :question3, "2", id: "custom_id7" %>
             <label for="custom_id7">「年末調整を受けていないバイト・勤務先の給与＋そのほかの所得」の合計が20万円を超える</label>
-            #「所得とは、収入（自分に支払われたお金）ー経費（収入を得るために自分が払ったお金、たとえば交通費や通信費など）のことです！」と表示させたい
+            <li>
+            <li>
+            ※「所得とは、収入（自分に支払われたお金）ー経費（収入を得るために自分が払ったお金、たとえば交通費や通信費など）のことです！
+            </li>
+            </li>
+            <li>
             <%= f.radio_button :question3, "3", id: "custom_id8" %>
             <label for="custom_id9">どれもあてはまらない</label>
+            </li>
         </div>
     
     </div>
-    <div class="sindanbotan">
+    <div class="shindanbutton">
         <%= f.submit " 結果 " %>
     </div>
+        <input type="submit" class="shindanbutton">
+        <form>
+        <p><input type="submit" value="送信する"><span>お問い合わせはこちら</span></p>
+        </form>
+    
 <% end %>
