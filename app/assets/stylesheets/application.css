@@ -73,7 +73,7 @@
   }
 
   .title{
-    color: #9FC8DF;
+    color: #90BDDA;
     margin-top: 10%;
     margin-bottom: 1%;
     margin-left: 10%;
@@ -90,8 +90,52 @@
     color: #FFFFFF;
     margin-top: 11%;
     margin-left: 5%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     height: 40px;
-    background-color: #DA7972;
+    background-color: #90BDDA;
+    width: 10%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kaisei Decol", serif;
+    font-size: 30px;
+    font-style: normal;
+  }
+
+  .shindan h3{
+    color: #FFFFFF;
+    margin-top: 11%;
+    margin-left: 5%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+    background-color: #90BDDA;
+    width: 10%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kaisei Decol", serif;
+    font-size: 30px;
+    font-style: normal;
+  }
+
+  .toukou h3{
+    color: #FFFFFF;
+    margin-top: 11%;
+    margin-left: 5%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+    background-color: #90BDDA;
     width: 10%;
     list-style: none;
     display: flex;
