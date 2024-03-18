@@ -84,27 +84,21 @@ perfume {
     font-style: normal;
     text-align: left;
 }   
-
-.shindanbutton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 350px; /* ボタン幅 */
-    height: 3.5em; /* ボタン高さ */
-    background: #fff; /* 背景色 */
-    position: relative;
-  }
   
-  .shadow_btn01 span {
+  .shadow_btn01 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 3.5em;
-    background: #fff; /* 背景色 */
-    color: #000; /* 文字色 */
+    margin-top: 79%;
+    margin-bottom: 10%;
+    margin-left: 40%;
+    width: 20%;
+    height: 10%;
+    background: #FFFFFF; /* 背景色 */
+    color: rgb(60, 55, 55); /* 文字色 */
     font-weight: bold; /* 文字の太さ */
+    font-size: 20px;
+    font-family: "Kaisei Decol", serif;
     letter-spacing: 0.1em;
     text-decoration: none;
     box-shadow: 0px 5px 12px #cad4e2, -6px -6px 12px #fff;
@@ -116,7 +110,7 @@ perfume {
   }
   
   /* マウスオーバーした際のデザイン */
-  .shadow_btn01:hover span {
+  .shadow_btn01:hover{
     left: 0;
     top: 0;
     box-shadow: 0 0 4px #CAD4E2, -2px -2px 4px #FFF;

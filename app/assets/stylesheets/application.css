@@ -74,20 +74,22 @@
 
   .title{
     color: #90BDDA;
-    margin-top: 10%;
+    margin-top: 11%;
     margin-bottom: 1%;
-    margin-left: 10%;
+    margin-left: 0%;
     height: 10%;
-    width: 35%;
+    width: 50%;
     align-items: center;
     font-family: "Kaisei Decol", serif;
-    font-size:30px;
+    font-size:40px;
     font-style: normal;
     line-height: 0.8;
+    text-shadow: 1px 1px 3px #bcc4c9;
   }
 
   .article{
     color: #FFFFFF;
+    background-color: #90BDDA;
     margin-top: 11%;
     margin-left: 5%;
     padding-left: 15px;
@@ -95,7 +97,6 @@
     padding-top: 5px;
     padding-bottom: 5px;
     height: 40px;
-    background-color: #90BDDA;
     width: 10%;
     list-style: none;
     display: flex;
@@ -159,4 +160,49 @@
     font-family: "Kaisei Decol", serif;
     font-weight: 700;
     font-style: normal;
+  }
+
+
+  .btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 4%;
+    margin-left: 5%;
+    width: 400px;
+    height: 200px;
+    color: #333;
+    background-color: #E0D6CC;
+    font-family: "Kaisei Decol", serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .btn a:hover {
+    color: #f2f2f2;
+  }
+
+  .btn06 a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: rotate(45deg) translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+    border-color: #333;
+  }
+  
+  .btn06 a:hover {
+    background-color: #bcc4c9;
+    #border: 1px solid #333;
+  }
+  
+  .btn06 a:hover::after {
+    border-color: #f2f2f2 #f2f2f2 transparent transparent;
   }
