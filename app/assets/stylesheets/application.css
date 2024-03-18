@@ -200,7 +200,6 @@
   
   .btn06 a:hover {
     background-color: #bcc4c9;
-    #border: 1px solid #333;
   }
   
   .btn06 a:hover::after {
