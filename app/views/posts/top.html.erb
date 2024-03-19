@@ -11,29 +11,19 @@
       <li>記事</li>
 </div>
 <div class="artticle1">
-<div class="btn btn06">
-	<a href="https://financialsite.onrender.com/perfumes/credit">クレジットカード</a>
-      <a href="https://financialsite.onrender.com/perfumes">確定申告</a>
-      <a href="https://financialsite.onrender.com/perfumes/nisa">NISA</a>
-</div>
+  <div class="btn btn06">
+      <%= link_to "クレジットカード(記事)", perfumes_credit_path, class: "link" %>
+      <%= link_to "確定申告(記事)", perfumes_path, class: "link" %>
+      <%= link_to "NISA(記事)", perfumes_nisa_path, class: "link" %>
+  </div>
 </div>
 
 <div class="shindan">
       <h3>診断</h3>
-      <div class="btn btn06">
-      <a href="https://financialsite.onrender.com/perfumes/new">確定申告すべきか簡単診断！</a>
-      </div>
+      <%= link_to "確定申告すべきか簡単診断！", new_perfume_path, class: "link" %> 
 </div>
 
 <div class="toukou">
       <h3>質問投稿</h3>
-      <div class="btn btn06">
-      <a href="https://financialsite.onrender.com/posts">お金に関する悩み・質問を投稿してみよう！</a>
-      </div>
+      <%= link_to "お金に関する悩み・質問を投稿してみよう！", posts_path, class: "link" %> 
 </div>
-
-　<%= link_to "クレジットカード(記事)", perfumes_credit_path, class: "link" %>
-　<%= link_to "確定申告(記事)", perfumes_path, class: "link" %>
-　<%= link_to "NISA(記事)", perfumes_nisa_path, class: "link" %>
-<li><%= link_to "診断", new_perfume_path, class: "link" %> </li>
-<li><%= link_to "質問投稿", posts_path, class: "link" %> </li>

@@ -1,37 +1,44 @@
 <div class="posts">
 <h1>みんなの投稿一覧</h1>
 </div>
-<div class="posts-container">
-  <% @posts.each do |t| %>
-    <div class="post">
-      <%= t.name %>
-      <%= t.about %>
-      <%= t.genre %>
-      <%= link_to "詳細へ", post_path(t.id) %> 
 
-      <% if user_signed_in? && current_user.id == t.user_id %>
-      <%= link_to "削除する", post_path(t.id), method: :delete %>
-    <% end %> 
-    </div>
-  <% end %>
-
-<%= form_tag({controller:"posts",action:"index"}, method: :get) do %>
+<div class="tag_box">
+  <p>タグ検索</p>
+  <%= form_tag({controller:"posts",action:"index"}, method: :get) do %>
   <% Tag.all.each do |t| %>
     <li><%= check_box :tag_ids, t.name %><%= t.name %></li>
   <% end %>
-  <%= submit_tag '検索' %>
+  <%= submit_tag '検索', class: "tag_button" %>
+  <% end %>
+</div>
+
+<div class="posts-container">
+  <% @posts.each do |t| %>
+    <div class="post">
+      Name: <%= t.name %><br>
+      Content: <%= t.about %><br>
+      <%= t.genre %><br>
+      <%= link_to "詳細へ", post_path(t.id), class:"detail"  %><br>
+
+      <% if user_signed_in? && current_user.id == t.user_id %>
+      <%= button_to "削除する", post_path(t.id), method: :delete, class: "delete" %>
+    <% end %> 
+    </div>
   <% end %>
 </div>
 
 <div class="post_create">
-<%= link_to "新規投稿へ", new_post_path %>
+<%= link_to "+", new_post_path, class: 'post_button' %>
 </div>
+
+
+
 
 <div class="postsindex01">
  <% if user_signed_in? %>
  <li><%= button_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
  <% else %>
- <li><%= link_to "新規登録", new_user_registration_path %></li>
- <li><%= link_to "ログイン", new_user_session_path %></li>
+ <li><%= link_to "新規登録", new_user_registration_path, class: "shinkitouroku" %></li>
+ <li><%= link_to "ログイン", new_user_session_path, class: "login" %></li>
  <% end %>
 </div>

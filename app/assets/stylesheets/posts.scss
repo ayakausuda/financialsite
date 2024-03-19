@@ -17,7 +17,7 @@
     margin-right: 25%;
     margin-bottom: 5%;
     height: 40%;
-    background-color: #DA7972;
+    background-color: #90BDDA;
     width: 50%;
     list-style: none;
     display: flex;
@@ -26,4 +26,382 @@
     font-family: "Kaisei Decol", serif;
     font-size: 40px;
     font-style: normal;
+}
+
+.posts-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.post{
+    color: rgb(60, 55, 55);
+    background-color: #E0D6CC;
+    width: 20%;
+    height: auto;
+    display:block;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 25px;
+    list-style: none;
+    align-items: center;
+    font-family: "Kaisei Decol", serif;
+    font-size: 20px;
+    font-style: normal;
+    text-align: left;
+}
+
+.detail{
+    color: #7dc1ef;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Kaisei Decol", serif;
+}
+
+.delete{
+    color: #7dc1ef;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Kaisei Decol", serif;
+}
+
+input.delete{
+    border: none;
+    background-color: #E0D6CC;
+    text-decoration: underline;
+}
+
+.tag_box{
+    display: flex;
+    justify-content: space-evenly;
+    color: #FFF;
+    background-color: #90BDDA;
+    width: 80%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 44px;
+    list-style: none;
+    align-items: center;
+    font-family: "Kaisei Decol", serif;
+    font-size: 17px;
+    font-style: normal;
+}
+
+.tag_box p{
+    font-size: 20px;
+}
+
+.tag_box li{
+    display: inline-block;
+    padding: 8px 25px;
+}
+
+.tag_button{
+    margin-top: 2%;
+}
+
+.field_0{
+    color: #FFFFFF;
+    margin-top: 5%;
+    margin-left: 38%;
+    margin-right: 25%;
+    margin-bottom: 8%;
+    height: 20%;
+    width: 23%;
+    padding-top: 0.6%;
+    padding-bottom: 0.6%;
+    background-color: #90BDDA;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kaisei Decol", serif;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.field{
+    color: rgb(60, 55, 55);
+    margin-left: 25%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 25px;
+    height: auto;
+    background-color: #E0D6CC;
+    width: 40%;
+    list-style: none;
+    align-items: center;
+    font-family: "Kaisei Decol", serif;
+    font-size: 20px;
+    font-style: normal;
+    text-align: left;
+}
+
+.form-group{
+    color: rgb(60, 55, 55);
+    margin-left: 25%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 25px;
+    height: auto;
+    background-color: #E0D6CC;
+    width: 40%;
+}
+
+.form-group li{
+    list-style: none;
+    align-items: center;
+    font-family: "Kaisei Decol", serif;
+    font-size: 20px;
+    font-style: normal;
+    text-align: left;
+}
+
+.form-check{
+    padding-top: 5px;
+    padding-left: 200px;
+    list-style: none;
+    align-items: center;
+    font-family: "Kaisei Decol", serif;
+    font-size: 20px;
+    font-style: normal;
+    text-align: left;
+}
+
+.shadow_btn02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75%;
+    margin-bottom: 15%;
+    margin-left: 40%;
+    width: 20%;
+    height: 10%;
+    background: #FFFFFF; /* 背景色 */
+    color: rgb(60, 55, 55); /* 文字色 */
+    font-weight: bold; /* 文字の太さ */
+    font-size: 20px;
+    font-family: "Kaisei Decol", serif;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    box-shadow: 0px 5px 12px #cad4e2, -6px -6px 12px #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    transition-duration: 0.2s;
+  }
+  
+  /* マウスオーバーした際のデザイン */
+  .shadow_btn02:hover{
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 4px #CAD4E2, -2px -2px 4px #FFF;
+  }
+
+  .field_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    margin-left: 40%;
+    width: 20%;
+    height: 10%;
+    background: #FFFFFF; /* 背景色 */
+    color: rgb(60, 55, 55); /* 文字色 */
+    font-weight: bold; /* 文字の太さ */
+    font-size: 20px;
+    font-family: "Kaisei Decol", serif;
+ }
+
+ .ichiran{
+    color: #90BDDA;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Kaisei Decol", serif;
+}
+
+ .field_2{
+    color: #FFFFFF;
+    margin-top: 5%;
+    margin-left: 38%;
+    margin-right: 25%;
+    margin-bottom: 5%;
+    height: 20%;
+    width: 23%;
+    padding-top: 0.6%;
+    padding-bottom: 0.6%;
+    background-color: #90BDDA;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kaisei Decol", serif;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.field_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 40%;
+    width: 20%;
+    height: 10%;
+    background: #FFFFFF; /* 背景色 */
+    color: rgb(60, 55, 55); /* 文字色 */
+    font-weight: bold; /* 文字の太さ */
+    font-size: 20px;
+    font-family: "Kaisei Decol", serif;
+ }
+
+ .post1{
+    color: rgb(60, 55, 55);
+    background-color: #E0D6CC;
+    width: 25%;
+    height: auto;
+    display:block;
+    margin-top: 2%;
+    margin-left: 35%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 25px;
+    list-style: none;
+    align-items: center;
+    font-family: "Kaisei Decol", serif;
+    font-size: 20px;
+    font-style: normal;
+    text-align: left;
+}
+
+.new_post{
+        color: #90BDDA;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: "Kaisei Decol", serif;
+}
+
+.post_create{
+    border-radius: 5px;
+    margin-left: 91%;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    box-sizing: border-box;
+    background: #90BDDA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post_button{
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.shinkitouroku{
+    display: inline-block;
+    width: 100%;
+    max-width: 200px; /* ボタン幅 */
+    margin-bottom: 1%;
+    position: relative;
+    background: #90BDDA; /* 背景色 */
+    border: 2px solid #90BDDA;
+    padding: 1em 2em;
+    font-weight: bold;
+    color: #fff; /* 文字色 */
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+  
+.shinkitouroku:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 0;
+    border-top: 2px solid #fff; /* 矢印の色 */
+    border-right: 2px solid #fff; /* 矢印の色 */
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    margin-top: -6px;
+}
+  
+  /* マウスオーバーした際のデザイン */
+.shinkitouroku:hover {
+    background: #fff; /* 背景色 */
+    color: #4D9BC1; /* 文字色 */
+}
+  
+.shinkitouroku:hover:before {
+    border-top: 2px solid #4D9BC1; /* 矢印の色 */
+    border-right: 2px solid #4D9BC1; /* 矢印の色 */
+}
+
+.login{
+    display: inline-block;
+    width: 100%;
+    max-width: 200px; /* ボタン幅 */
+    position: relative;
+    background: #90BDDA; /* 背景色 */
+    border: 2px solid #90BDDA;
+    padding: 1em 2em;
+    font-weight: bold;
+    color: #fff; /* 文字色 */
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+  
+.login:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 0;
+    border-top: 2px solid #fff; /* 矢印の色 */
+    border-right: 2px solid #fff; /* 矢印の色 */
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    margin-top: -6px;
+}
+  
+  /* マウスオーバーした際のデザイン */
+.login:hover {
+    background: #fff; /* 背景色 */
+    color: #4D9BC1; /* 文字色 */
+}
+  
+.login:hover:before {
+    border-top: 2px solid #4D9BC1; /* 矢印の色 */
+    border-right: 2px solid #4D9BC1; /* 矢印の色 */
 }

@@ -1,18 +1,21 @@
-<h1>お悩み相談</h1>
-<h3>新規投稿</h3>
+<div class=field_0>
+<h1>新規投稿</h1>
+</div>
+
 <%= form_for @post do |f| %>
 
   <div class="field">
-    <%= f.label :ニックネーム %>
+    <%= f.label :ニックネーム　　　 %>
     <%= f.text_field :name, :size => 30 %>
   </div>
 
   <div class="field">
-    <%= f.label :相談内容  %>
+    <%= f.label :投稿内容　　　　　 %>
     <%= f.text_area :about, :size => "30x2" %>
   </div>
 
   <div class='form-group'>
+  <li>投稿にタグ付け</li>
   <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
       <div class='form-check'>
           <%= tag.label class: 'form-check-label' do %>
@@ -23,7 +26,9 @@
   <% end %>
 </div>
 
-  <%= f.submit "投稿する" %>
+  <%= f.submit "投稿する", class: "shadow_btn02" %>
 <% end %>
 
-<%= link_to "一覧に戻る", posts_path %>
+<div class=field_1>
+<%= link_to "一覧に戻る", posts_path, class: "ichiran" %>
+</div>
