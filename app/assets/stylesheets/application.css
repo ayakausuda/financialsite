@@ -166,16 +166,21 @@
     font-style: normal;
   }
 
+  .article1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
 
   .link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     margin-top: 4%;
     margin-left: 5%;
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
     color: #333;
     background-color: #E0D6CC;
     font-family: "Kaisei Decol", serif;
@@ -183,6 +188,7 @@
     font-weight: 700;
     text-decoration: none;
     transition: 0.3s;
+    align-items: center;
   }
   
   .link:hover {
@@ -207,5 +213,91 @@
   }
   
   .link:hover::after {
+    border-color: #f2f2f2 #f2f2f2 transparent transparent;
+  }
+
+  .link1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    margin-top: 4%;
+    margin-left: 5%;
+    width: 400px;
+    height: 200px;
+    color: #333;
+    background-color: #E0D6CC;
+    font-family: "Kaisei Decol", serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .link1:hover {
+    color: #f2f2f2;
+  }
+
+  .link1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: rotate(45deg) translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+    border-color: #333;
+  }
+  
+  .link1:hover {
+    background-color: #bcc4c9;
+  }
+  
+  .link1:hover::after {
+    border-color: #f2f2f2 #f2f2f2 transparent transparent;
+  }
+
+  .link2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    margin-top: 4%;
+    margin-left: 5%;
+    width: 400px;
+    height: 200px;
+    color: #333;
+    background-color: #E0D6CC;
+    font-family: "Kaisei Decol", serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .link2:hover {
+    color: #f2f2f2;
+  }
+
+  .link2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: rotate(45deg) translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+    border-color: #333;
+  }
+  
+  .link2:hover {
+    background-color: #bcc4c9;
+  }
+  
+  .link2:hover::after {
     border-color: #f2f2f2 #f2f2f2 transparent transparent;
   }
