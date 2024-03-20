@@ -1,6 +1,6 @@
 databases:
   - name: financialsite_DB
-    databaseName: financialsite_db
+    databaseName: financialsite_db_tx3w
     user: financialsite
     region: singapore
 
