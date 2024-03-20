@@ -398,10 +398,51 @@ input.delete{
   /* マウスオーバーした際のデザイン */
 .login:hover {
     background: #fff; /* 背景色 */
-    color: #4D9BC1; /* 文字色 */
+    color: #90BDDA; /* 文字色 */
 }
   
 .login:hover:before {
-    border-top: 2px solid #4D9BC1; /* 矢印の色 */
-    border-right: 2px solid #4D9BC1; /* 矢印の色 */
+    border-top: 2px solid #90BDDA; /* 矢印の色 */
+    border-right: 2px solid #90BDDA; /* 矢印の色 */
+}
+
+.logout{
+    display: inline-block;
+    width: 100%;
+    max-width: 200px; /* ボタン幅 */
+    margin-bottom: 1%;
+    position: relative;
+    background: #90BDDA; /* 背景色 */
+    border: 2px solid #90BDDA;
+    padding: 1em 2em;
+    font-weight: bold;
+    color: #fff; /* 文字色 */
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+  
+.logout:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 0;
+    border-top: 2px solid #fff; /* 矢印の色 */
+    border-right: 2px solid #fff; /* 矢印の色 */
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    margin-top: -6px;
+}
+  
+  /* マウスオーバーした際のデザイン */
+.logout:hover {
+    background: #fff; /* 背景色 */
+    color: #90BDDA; /* 文字色 */
+}
+  
+.logout:hover:before {
+    border-top: 2px solid #90BDDA; /* 矢印の色 */
+    border-right: 2px solid #90BDDA; /* 矢印の色 */
 }
